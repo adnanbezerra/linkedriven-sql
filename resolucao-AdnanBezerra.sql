@@ -13,6 +13,3 @@ SELECT e."userId" AS id, u.name, c.name AS course, s.name AS school, e."endDate"
 -- QUESTÃO 4
 
 SELECT e."userId" AS id, u.name, r.name AS Role, c.name AS company, e."startDate" FROM experiences e JOIN users u ON e."userId"=u.id JOIN roles r ON r.id=e."roleId" JOIN companies c ON c.id=e."companyId" WHERE e."userId"=50 AND "endDate" IS NULL;
-
--- QUESTÃO BÔNUS
-
